@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2&display=swap");
+        * {
+            font-family: "Baloo 2", cursive;
+            font-size: 25px;
+        }
+
+        header {
+            padding-top: 25px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 25px;
+            /* background-color:rgb(50, 156, 121); */
+            background-color: aliceblue;
+        }
+
+        .left {
+            margin-left: 30px;
+        }
+
+        li {
+            display: inline;
+            text-decoration: none;
+            margin-left: 30px;
+        }
+
+        .right li:last-child {
+            margin-right: 60px;
+        }
+
+        .centered {
+            position: absolute;
+            top: 25%;
+            left:17%;
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+            cursor: pointer;
+            color:rgb(50, 156, 121);
+        }
+
+        #pagecontentphoto {
+            width: 100%;
+            height: 100%;
+        }
+        .descriptionwebsite {
+            height: 250px;
+            font-weight: bold;
+            padding-top: 50px;
+            text-align: center;
+        }
+        a:hover {
+            color: darkred;
+        }
+        #firstline{
+            font-size: 35px;
+            padding-top: 25px;
+            margin-bottom: 0px;
+        }
+        #secondline {
+            font-size: 30px;
+        }
+        .foot {
+            text-align: center;
+            color: rgb(231, 68, 68);
+            text-decoration:overline dashed;
+        }
+        footer {
+            background-color:aqua;
+        }
+        #pizza,#and,#grill {
+            color: rgb(231, 68, 68);
+            font-size: 100px;
+            font-weight: bold;
+            margin-bottom: 0px;
+            text-align: left;
+
+        }
+        #imagefromfreepik{
+            margin-top: 30px;
+            margin-bottom: 5px;
+        }
+        #viewmenu {
+            background-color: rgb(231, 68, 68);
+            color: white;
+            padding: 5px 15px;
+            font-size: 30px;
+            font-weight: bold;
+            border:none;
+            border-radius: 20px;
+        }
+        .centered p:nth-child(3){
+            border-bottom: 15px solid rgb(231, 68, 68);
+        }
