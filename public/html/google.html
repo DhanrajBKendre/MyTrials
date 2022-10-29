@@ -15,63 +15,70 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <!-- or -->
     <!-- @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"); -->
+    <link rel="stylesheet" href="/src/css/google.css">
     <title>Google</title>
     <style>
-        body {
-            margin: 50px;
-            background-color: azure;
-        }
-        li{
-            display: inline;
-            text-decoration: none;
-        }
-        main {
-            height: 500px;
-        }
+        
     </style>
 </head>
 
 <body>
-    <header>
-        <div align="right">
+    <header class="d-flex">
+        <div>
             <ul>
-                <li><a href="#">Gmail</a></li>
-                <li><a href="#">Images</a></li>
-                <li><a href="#">Our Products</a></li>
-                <li><img src="#" alt="profilepicture.jpg"></li>
+                <li><a href="https://www.google.com/intl/en-GB/gmail/about/">Gmail</a></li>
+                <li><a href="https://www.google.co.in/imghp?hl=en&ogbl">Images</a></li>
+                <li><a href="https://about.google/products/"><img src="/public/icons/google/googleproducts.ico" alt="googleproducts.jpg"></a></li>
+                <li><a href="https://accounts.google.com/v3/signin/identifier?dsh=S-284995134%3A1667045492316919&continue=https%3A%2F%2Fwww.google.co.in%2F&ec=GAZAmgQ&hl=en&passive=true&flowName=GlifWebSignIn&flowEntry=ServiceLogin&ifkv=AQDHYWrpxdbWKd85GGInflKlXH5oVCipRfce6Q8Q6y-AiYQbdibic4ueLiNq1td48uSJJFeYX_FTxg"><img id="profileicon" src="/public/icons/google/profile.ico" alt="profilepicture.jpg"></a></li>
             </ul>
         </div>
     </header>
-    <main align="center">
-        <section>
-            <div>
-                <a href="#"><img src="/public/img/google/googlelogo_color_272x92dp.png" alt="googleimage.png"></a>
-            </div>
-        </section>
-        <section>
-            <span><button>Google Search</button></span>
-            <span><button>I'm Feeling Lucky</button></span>
-            <p>Google offered in: <a href="#">Hindi</a> <a href="#">Marathi</a></p>
-        </section>
+    <main class="d-flex flex-column align-items-center">
+        <div class="p-3">
+            <a href="#"><img id="googleimg" src="/public/img/google/googlelogo_color_272x92dp.png" alt="googleimage.png"></a>
+        </div>
+        <div id="inputsearch" class="p-5"> 
+            <button id="searchbutton">
+                <input type="search" name="searchbar" id="searchbar">
+                <span class="bi bi-search"></span>
+            </button>
+        </div>
+        <div class="d-flex gap-3 p-3">
+            <span><button class="btn btn-lg btn-outline-dark">Google Search</button></span>
+            <span><button class="btn btn-lg btn-outline-dark">I'm Feeling Lucky</button></span>
+        </div>
+        <div class="p-4">
+            <p id="googleofferedin">Google offered in:
+                <a href="#">हिन्दी</a>
+                <a href="#">मराठी</a>
+                <a href="#">বাংলা</a>
+                <a href="#">తెలుగు</a>
+                <a href="#">தமிழ்</a>
+                <a href="#">ગુજરાતી</a>
+                <a href="#">ಕನ್ನಡ</a>
+                <a href="#">മലയാളം</a>
+                <a href="#">ਪੰਜਾਬੀ</a>
+            </p>
+        </div>
     </main>
     <footer>
-        <div>
+        <div class="countryname">
             India
         </div>
-        <div>
-            <div>
+        <div class="footercontent">
+            <div class="left">
                 <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Advertising</a></li>
-                    <li><a href="#">Business</a></li>
-                    <li><a href="#">How Search Works</a></li>
+                    <li><a href="https://about.google/?utm_source=google-IN&utm_medium=referral&utm_campaign=hp-footer&fg=1">About</a></li>
+                    <li><a href="https://ads.google.com/intl/en_in/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2m--ahpm-0000000114-0000000000&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a></li>
+                    <li><a href="https://www.google.com/intl/en_in/business/">Business</a></li>
+                    <li><a href="https://www.google.com/search/howsearchworks/?fg=1">How Search Works</a></li>
                 </ul>
             </div>
-            <div>
+            <div class="right">
                 <ul>
-                    <li><a href="#">Privacy</a></li>
-                    <li><a href="#">Terms</a></li>
-                    <li><a href="#">Settings</a></li>
+                    <li><a href="https://policies.google.com/privacy?hl=en-IN&fg=1">Privacy</a></li>
+                    <li><a href="https://policies.google.com/terms?hl=en-IN&fg=1">Terms</a></li>
+                    <li><a href="https://www.google.co.in/preferences?hl=en-IN&fg=1">Settings</a></li>
                 </ul>
             </div>
         </div>
